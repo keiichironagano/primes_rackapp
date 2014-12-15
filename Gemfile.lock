@@ -1,0 +1,30 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    daemons (1.1.9)
+    em-synchrony (1.0.3)
+      eventmachine (>= 1.0.0.beta.1)
+    eventmachine (1.0.3)
+    faye-websocket (0.9.0)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.0)
+    rack (1.5.2)
+    rack-stream (0.0.5)
+      em-synchrony
+      eventmachine
+      faye-websocket
+      rack
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
+    websocket-driver (0.5.0)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rack-stream
+  thin
